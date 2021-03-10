@@ -11,6 +11,7 @@ const io = require('socket.io')(socket);
 const port = 8000;
 
 
+app.use('/img', express.static('./img'));
 app.use('/css', express.static('./css'));
 app.use('/js', express.static('./js'));
 
